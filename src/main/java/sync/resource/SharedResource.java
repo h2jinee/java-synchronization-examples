@@ -1,10 +1,10 @@
-package threadtest.shared;
+package sync.resource;
 
-import threadtest.sync.CustomMutex;
+import sync.core.Mutex;
 
 public class SharedResource {
     private int value = 0;
-    private final CustomMutex mutex = new CustomMutex();
+    private final Mutex mutex = new Mutex();
 
     public void increment() throws InterruptedException {
         mutex.lock();

@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="767b538d-fad7-4955-b5a9-239e8d82fd57" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/threadtest/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/threadtest/shared/SharedResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/threadtest/sync/CustomMonitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/threadtest/sync/CustomMutex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/threadtest/sync/CustomSemaphore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/threadtest/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sync/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/threadtest/shared/SharedResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sync/resource/SharedResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/threadtest/sync/CustomMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sync/core/Monitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/threadtest/sync/CustomMutex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sync/core/Mutex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/threadtest/sync/CustomSemaphore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sync/core/Semaphore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2tTQo1VIuRyI9BZqn7OayVeq5F9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,9 +38,9 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/dev/threadTest/src/main/java/threadtest/shared",
+    "last_opened_file_path": "D:/dev/java-synchronization-examples",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,11 +56,11 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="threadtest.Main" />
+      <option name="MAIN_CLASS_NAME" value="sync.demo.Main" />
       <module name="java-synchronization-examples" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="threadtest.*" />
+          <option name="PATTERN" value="sync.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,6 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1740373759242</updated>
       <workItem from="1740373761878" duration="4602000" />
+      <workItem from="1740380668030" duration="431000" />
     </task>
     <servers />
   </component>

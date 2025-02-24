@@ -1,6 +1,6 @@
-package threadtest.sync;
+package sync.core;
 
-public class CustomMonitor {
+public class Monitor {
     private final Object lock = new Object();
     private boolean condition = false;
 

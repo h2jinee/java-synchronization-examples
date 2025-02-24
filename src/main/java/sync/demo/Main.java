@@ -1,8 +1,8 @@
-package threadtest;
+package sync.demo;
 
-import threadtest.sync.CustomMonitor;
-import threadtest.sync.CustomSemaphore;
-import threadtest.shared.SharedResource;
+import sync.core.Monitor;
+import sync.core.Semaphore;
+import sync.resource.SharedResource;
 
 public class Main {
     public static void main(String[] args) {
@@ -58,7 +58,7 @@ public class Main {
 
     private static void testSemaphore() {
         System.out.println("\n=== Testing Semaphore ===");
-        CustomSemaphore semaphore = new CustomSemaphore(2); // 2개의 permit
+        Semaphore semaphore = new Semaphore(2); // 2개의 permit
 
         for (int i = 0; i < 5; i++) {
             new Thread(() -> {
@@ -78,7 +78,7 @@ public class Main {
 
     private static void testMonitor() {
         System.out.println("\n=== Testing Monitor ===");
-        CustomMonitor monitor = new CustomMonitor();
+        Monitor monitor = new Monitor();
 
         Thread waiter = new Thread(() -> {
             try {

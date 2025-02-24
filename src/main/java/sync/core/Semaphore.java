@@ -1,9 +1,9 @@
-package threadtest.sync;
+package sync.core;
 
-public class CustomSemaphore {
+public class Semaphore {
     private int permits;
 
-    public CustomSemaphore(int permits) {
+    public Semaphore(int permits) {
         this.permits = permits;
     }
 

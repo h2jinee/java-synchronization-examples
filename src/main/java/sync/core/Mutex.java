@@ -1,6 +1,6 @@
-package threadtest.sync;
+package sync.core;
 
-public class CustomMutex {
+public class Mutex {
     private boolean locked = false;
 
     public synchronized void lock() throws InterruptedException {
